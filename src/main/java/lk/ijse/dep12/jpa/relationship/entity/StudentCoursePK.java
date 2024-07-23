@@ -14,11 +14,10 @@ import java.sql.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Embeddable
+
 public class StudentCoursePK implements Serializable {
-    @Column(name = "course_code")
-    private String courseCode;
-    @Column(name = "student_id")
-    private String studentId;
+
+    private Course course;
+    private Student student;
 
 }

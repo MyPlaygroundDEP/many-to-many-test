@@ -19,10 +19,10 @@ public class ManyToMAnyDemo1 {
             EntityTransaction tx = em.getTransaction();
             try {
                 tx.begin();
-                Student st1 = new Student("S003", "kasun", "sampath", "galle", "011-2346542", Date.valueOf("2000-01-23"));
-                Student st2 = new Student("S004", "nimal", "kumara", "badulla", "067-2346542", Date.valueOf("1980-01-01"));
+                Student st1 = new Student("S005", "kasun", "sampath", "galle", "011-2346542", Date.valueOf("2000-01-23"));
+                Student st2 = new Student("S006", "nimal", "kumara", "badulla", "067-2346542", Date.valueOf("1980-01-01"));
 
-                Course cs1 = new Course("C002", "DEP", "6 months");
+                Course cs1 = new Course("C003", "DEP", "6 months");
 
                 StudentCourse studentCourse1 = new StudentCourse(st1, cs1, "admin", Date.valueOf(LocalDate.now()));
                 StudentCourse studentCourse2 = new StudentCourse(st2, cs1, "admin", Date.valueOf(LocalDate.now()));
